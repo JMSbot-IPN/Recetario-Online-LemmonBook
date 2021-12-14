@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
     <head>
-        <title>LemmonBook - Salpicon</title>
+        <title>LemmonBook - Enfrijoladas</title>
         <!-- Required meta tags -->
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -23,13 +23,13 @@
             <div class="collapse navbar-collapse" id="collapsibleNavId">
                 <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
                     <li class="nav-item active">
-                        <a class="nav-link" href="/.assets/paginas/recetas-populares/recetas-populares.html">Recetas populares<span class="sr-only">(current)</span></a>
+                        <a class="nav-link" href="/assets/paginas/recetas-populares/recetas-populares.html">Recetas populares<span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="/.assets/paginas/glosario/glosario.html">Glosario</a>
+                        <a class="nav-link" href="/assets/paginas/glosario/glosario.html">Glosario</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="/.assets/paginas/receta/Receta.html">Comparte tu receta!</a>
+                        <a class="nav-link" href="/assets/paginas/receta/Receta.html">Comparte tu receta!</a>
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Links útiles</a>
@@ -40,76 +40,57 @@
                         </div>
                     </li>
                 </ul>
-
-        <!--buscador externo-->
-            <form class="form-inline my-2 my-lg-0" method=get action="http://www.google.es/search" target="_blank">
-                <input type=search autocomplete="off" name="q" class="form-control mr-sm-2" placeholder="Busca tu receta favorita">
-                <button class="btn btn-outline-dark my-2 my-sm-0">Buscar</button>
-            </form>
-        </div>
+                <!--buscador externo-->
+                <form class="form-inline my-2 my-lg-0" method=get action="http://www.google.es/search" target="_blank">
+                    <input type=search autocomplete="off" name="q" class="form-control mr-sm-2" placeholder="Busca tu receta favorita">
+                    <button class="btn btn-outline-dark my-2 my-sm-0">Buscar</button>
+                </form>
+            </div>
         </nav>
 
-        <div class="right">
-            <div class="card">
-                <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
-                <img src="/.assets/fotos/chefs/chef4.jpg" height="500" width="500" class="img-fluid" />
-                <a href="#!">
-                    <div class="mask" style="background-color: rgba(251, 251, 251, 0.15)"></div>
-                </a>
-                </div>
-            
-                <div class="card-body">
-                <h5 class="card-title">Chef que envió la receta:</h5>
-                <p class="card-text">
-                    Samantha Millers
-                </p>
-            
-            
-                </div>
+        <!--Galeria-->
+        <section class="container">
+            <div class="text-center pt-5">
+            <h1><i class="fas fa-award"></i> Top 5 recetas de la semana <i class="fas fa-award"></i></h1>
+        </div> 
+        <div class="row">
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <a href="/assets/paginas/enfrijoladas/enfrijoladas.html"><img src="/assets/fotos/comida/enfrijoladas.png" alt=""></a>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <a href="/assets/paginas/mole/mole.html"><img src="/assets/fotos/comida/mole-de-oya.jpg" alt=""></a>
+            </div>
+            <div class="col-1g-4 col-md-6 col-sm-12">
+                <a href="/assets/paginas/salpicon/salpicon.html"><img src="/assets/fotos/comida/salpicon-de-res.jpg" alt=""></a>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <a href="/assets/paginas/tacos/tacos.html"><img src="/assets/fotos/comida/tacos-al-pastor.jpg" alt=""></a>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <a href="/assets/paginas/tostadas/tostadas.html"><img src="/assets/fotos/comida/tostadas-de-tinga.jpg" alt=""></a>
             </div>
         </div>
+        </section>
+
+        <!--Alert-->
+        <div class="text-center">
+            <h1>Recomendación del restaurante del mes</h1>
+        </div>
+
+        <!--Geolocalización-->
+        <script src="index.js"></script>
+        <div id="map"></div>
+        <script
+          src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCU4TRI-yexQrvZTlAJ4LDffCtW1FB3iDE&callback=initMap&libraries=&v=weekly"
+          async
+        ></script>
+
+        <div class="alert alert-warning text-center" role="alert" data-mdb-color="warning">
+            <i class="fas fa-exclamation-triangle me-3"></i> La capacidad del restaurante puede variar dependiendo del semaforo de Covid-19 en la zona del establecimiento
+        </div>
+
         
-        <div class="center">
-            <div class="ingredientes">
-                <h1 class="text-center">ingredientes</h1>
-                <p class="text-justify">
-                <ul>
-                    <li>700 gramos de filete de res, sin grasa</li>
-                    <li>1/2 cebollas</li>
-                    <li>1 cabeza de ajo</li>
-                    <li>suficiente de agua</li>
-                    <li>pizcas de sal</li>
-                    <li>3 jitomates, en cubitos</li>
-                    <li>1/2 cebollas, fileteada</li>
-                    <li>4 chiles serranos, finamente picado</li>
-                    <li>1 cucharada de cilantro fresco, finamente picado</li>
-                    <li>1 cucharadita de orégano</li>
-                    <li>2 cucharaditas de aceite de oliva</li>
-                    <li>2 cucharadas de vinagre blanco</li>
-                    <li>4 limones, cortado por la mitad</li>
-                    <li>12 hojas de lechuga</li>
-                    <li>al gusto de aguacate, para decorar</li>
-                    <li>al gusto de rábano, en rodajas para decorar</li>
-                    <li>al gusto de cebolla cambray, en medios aros, para decorar</li>
-                </ul>
-                </p>
-            </div>
 
-            <div class="imgintro">
-                <img src="/.assets/fotos/comida/salpicon-de-res.jpg" alt="">
-            </div>
-
-            <div class="procedimiento">
-                <h1>procedimiento</h1>
-                <ul>
-                    <li>En una olla con agua, cuece el filete de res con la cebolla, la cabeza de ajo y sal por 1 hora. Deja enfriar, deshebra y reserva.</li>
-                    <li>En un bowl mezcla carne con el jitomate la cebolla, el chile serrano, el cilantro, el orégano, el aceite de oliva, el vinagre blanco, el jugo de los limones, sazona con sal y pimienta.</li>
-                    <li>Coloca un poco de salpicón en una hoja de lechuga, agrega láminas de aguacate, rábanos y decora con aros de cebolla cambray. Disfruta.</li>
-                </ul>
-            </div>
-        </div>
-
-        <!--footer-->
         <footer class="text-center text-lg-start" style="background-color: #ff9d00;">
             <div class="container d-flex justify-content-center py-5">
                 <a href="https://www.facebook.com/" target=”_blank” type="button" class="btn btn-primary btn-lg btn-floating mx-2" style="background-color: #54456b;">
