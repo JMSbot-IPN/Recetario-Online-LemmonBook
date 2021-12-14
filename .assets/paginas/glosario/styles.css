@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Suez+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Heebo&display=swap');
+
+/*Estilos*/
+.navbar{
+    background-color: rgb(255, 175, 50);
+}
+
+.navbar-brand{
+    color: white;
+    font-family: 'Lobster', cursive;
+}
+
+.nav-link{
+    color: white;
+}
+
+a:link{
+    color: white;
+}
+
+.dropdown-menu{
+    background-color: rgb(255, 157, 0);
+}
+
+.tit01{
+    font-family: 'Suez One', serif;
+    font-size: 50px;
+    text-align: center;
+    padding: 2% 0 2% 0;
+}
+
+.glosario{
+    max-width: 85%;
+    text-align: justify;
+    margin: auto;
+    font-family: 'Heebo', sans-serif;
+    font-size: larger;
+}
+
+/*BOTON DE REDES*/
+#btn-mas{
+    display: none;
+}
+.container{
+    position: fixed; /* posicion fija a la pantalla*/
+    bottom: 0%;
+    right: -56%;
+}
+.redes a, .btn-mas label{
+    display: block;         /*Mostrar en forma de pila*/
+    text-decoration: none;
+    background: #cc2b2b;
+    color: #fff;
+    width: 55px;
+    height: 55px;
+    line-height: 55px;
+    text-align: center;
+    border-radius: 50px;
+    box-shadow: 0px 1px 10px rgba(0,0,0,0.4);
+    transition: all 500ms ease;                         /*Hacer la transición*/
+}
+.redes a:hover{             /*Acciones al pasar el puntero encima*/
+    background: #fff;
+    color: #cc2b2b;
+}
+.redes a{
+    margin-bottom: -15px;
+    opacity: 0;
+    visibility: hidden;
+}
+#btn-mas:checked~ .redes a{ /*Cuando esta chekeado*/
+    margin-bottom: 10px;
+    opacity: 1;
+    visibility: visible;
+}
+.btn-mas label{             /*Ajustes del boton principal*/
+    cursor: pointer;
+    background: #f44141;
+    font-size: 23px;
+}
+#btn-mas:checked ~ .btn-mas label{      /*Rotar el boton principañ*/
+    transform: rotate(360deg);
+    font-size: 25px;
+}

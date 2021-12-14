@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <title>LemmonBook - tu recetario online</title>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <!--Font awesome Icons-->
+        <script src="https://kit.fontawesome.com/c6941b7d72.js" crossorigin="anonymous"></script>
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="stylesheet" href="styles.css">
+    </head>
+
+    <!--header de bootstrap-->
+    <nav class="navbar navbar-expand-sm">
+        <a class="navbar-brand" href="/main.html">
+            <i class="far fa-lemon"> LemmonBook</i>
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId"
+            aria-expanded="false" aria-label="Toggle navigation"></button>
+        <div class="collapse navbar-collapse" id="collapsibleNavId">
+            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                <li class="nav-item active">
+                    <a class="nav-link" href="/.assets/paginas/recetas-populares/recetas-populares.html">Recetas populares<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/.assets/paginas/glosario/glosario.html">Glosario</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/.assets/paginas/receta/Receta.html">Comparte tu receta!</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Links útiles</a>
+                    <div class="dropdown-menu" aria-labelledby="dropdownId">
+                        <a class="dropdown-item" target=”_blank” href="https://www.walmart.com.mx/">Walmart</a>
+                        <a class="dropdown-item" target=”_blank” href="https://www.amazon.com.mx/">Amazon</a>
+                        <a class="dropdown-item" target=”_blank” href="https://www.glotonessingluten.com/">Recetas sin gluten</a>
+                    </div>
+                </li>
+            </ul>
+                <!--buscador externo-->
+                <form class="form-inline my-2 my-lg-0" method=get action="http://www.google.es/search" target="_blank">
+                    <input type=search autocomplete="off" name="q" class="form-control mr-sm-2" placeholder="Busca tu receta favorita">
+                    <button class="btn btn-outline-dark my-2 my-sm-0">Buscar</button>
+                </form>
+        </div>
+    </nav>
+
+    <div class="video-container">
+    <video src="/.assets/videos/Cocinando.mp4" autoplay loop muted></video>
+    <div class="fade"></div>
+        <div class="text1">
+            <div class="text-center py-5">
+                <h1>Comparte tu receta con nosotros</h1>
+                <h3>Podrias salir como receta favorita la siguiente semana <i class="fab fa-telegram-plane"></i></h3>
+            </div>
+            <div class="formulario">
+                <form>
+                    <div class="row mb-4">
+                    <div class="col">
+                        <div class="form-outline">
+                        <input type="text" id="form6Example1" class="form-control" />
+                        <label class="form-label" for="form6Example1">Nombre(s)</label>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="form-outline">
+                        <input type="text" id="form6Example2" class="form-control" />
+                        <label class="form-label" for="form6Example2">Apellidos</label>
+                        </div>
+                    </div>
+                    </div>
+                
+                    <!-- Text input -->
+                    <div class="form-outline mb-4">
+                    <input type="email" id="form6Example4" class="form-control" />
+                    <label class="form-label" for="form6Example4">Correo</label>
+                    </div>
+                
+                    <!-- Email input -->
+                    <div class="form-outline mb-4">
+                    <input type="number" id="form6Example5" class="form-control" />
+                    <label class="form-label" for="form6Example5">Telefono</label>
+                    </div>
+                
+                    <!-- Message input -->
+                    <div class="form-outline mb-4">
+                        <textarea class="form-control" id="form6Example7" rows="4"></textarea>
+                        <label class="form-label" for="form6Example7">Ingredientes</label>
+                    </div>
+                
+                    <!-- Message input -->
+                    <div class="form-outline mb-4">
+                    <textarea class="form-control" id="form6Example7" rows="4"></textarea>
+                    <label class="form-label" for="form6Example7">Procedimiento</label>
+                    </div>
+                
+                    <!-- Submit button -->
+                    <button type="submit" class="btn btn-primary btn-block mb-4">Enviar receta <i class="fa fa-envelope-open-text" aria-hidden="true"></i></button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+    <footer class="text-center text-lg-start" style="background-color: #ff9d00;">
+    <div class="container d-flex justify-content-center py-5">
+        <a href="https://www.facebook.com/" target=”_blank” type="button" class="btn btn-primary btn-lg btn-floating mx-2" style="background-color: #54456b;">
+        <i class="fab fa-facebook-f"></i>
+        </a>
+        <a href="https://www.youtube.com/" target=”_blank” type="button" class="btn btn-primary btn-lg btn-floating mx-2" style="background-color: #54456b;">
+        <i class="fab fa-youtube"></i>
+        </a>
+        <a href="https://www.instagram.com/" target=”_blank” type="button" class="btn btn-primary btn-lg btn-floating mx-2" style="background-color: #54456b;">
+        <i class="fab fa-instagram"></i>
+        </a>
+        <a href="https://twitter.com/" target=”_blank” type="button" class="btn btn-primary btn-lg btn-floating mx-2" style="background-color: #54456b;">
+        <i class="fab fa-twitter"></i>
+        </a>
+    </div>
+    <!-- Copyright -->
+    <div class="text-center text-white p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+        © 2020 Copyright:
+        <a class="text-white" href="https://mdbootstrap.com/">MDBootstrap.com</a>
+    </div>
+    <!-- Copyright -->
+    </footer>
+
+  <!-- End of .container -->
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    </body>
+</html>

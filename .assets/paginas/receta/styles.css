@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+/*Estilos*/
+.navbar{
+    background-color: rgb(255, 175, 50);
+}
+
+.navbar-brand{
+    color: white;
+    font-family: 'Lobster', cursive;
+}
+
+.nav-link{
+    color: white;
+}
+
+a:link{
+    color: white;
+}
+
+.dropdown-menu{
+    background-color: rgb(255, 157, 0);
+}
+
+.formulario{
+    max-width: 80%;
+    margin: auto;
+}
+
+.video-container{
+    position: relative;
+    z-index: -100;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: calc(100vw*0.5625);
+    overflow: hidden;
+}
+
+.video-container video{
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    z-index: 1;
+}
+
+.video-container .fade{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: 2;
+    background: black;
+    opacity: 0.5;
+}
+
+.video-container .text1{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    color: white;
+    z-index: 3;
+    background-color: transparent;
+    text-align: center;
+}
+
+.video-container .text1 form{
+    z-index: 0;
+}
